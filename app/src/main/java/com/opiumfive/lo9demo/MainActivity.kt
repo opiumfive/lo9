@@ -10,12 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        log.deleteLogFile(this)
         log.startLoggingToFile(this)
         log.debug("doing this")
         log.debug("doing that")
         log.error("oops error")
 
         log.shareLogFile(this, "opiumfive@gmail.com")
-        log.deleteLogFile(this)
+
     }
 }
