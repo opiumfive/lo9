@@ -1,0 +1,2 @@
+include ':app', ':lo9'
+rootProject.name='Lo9Demo'
